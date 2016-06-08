@@ -256,11 +256,14 @@ a:focus {
     font-size: 40px;
 }
 
-.intro .btn:hover,
-.intro .btn:focus {
+.intro .btn:hover {
   outline: 0;
   color: rgba(255,255,255,.5);
   background-color: transparent;
+}
+
+.intro .btn:focus {
+  color: #fff;
 }
 
 .intro .btn i {
