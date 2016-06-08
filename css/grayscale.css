@@ -22,7 +22,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #ddd;
     background-color: #000;
 }
@@ -78,11 +78,11 @@ ol {
 
 @media(min-width:768px) {
     body {
-      font-size: 15px;
+      font-size: 16px;
     }
 
     h4 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     p {
@@ -254,6 +254,24 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
+}
+
+.intro .btn:hover,
+.intro .btn:focus {
+  outline: 0;
+  color: rgba(255,255,255,.5);
+  background-color: transparent;
+}
+
+.intro .btn i {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
 }
 
 @media(min-width:768px) {
