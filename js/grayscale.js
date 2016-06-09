@@ -13,6 +13,14 @@ function collapseNavbar() {
     }
 }
 
+function loadBackground() {
+  $('<img/>').attr('src', 'img/slide2.jpg').load(function() {
+    $(this).remove();
+    $('.intro').addClass('loaded');
+});
+}
+
+$(document).ready(loadBackground);
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 

@@ -206,7 +206,29 @@ a:focus {
     color: #fff;
 }
 
-.intro:after {
+.intro.loading:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 66px;
+  height: 66px;
+  opacity: 0.8;
+  z-index: -1;
+  background: url(../img/ajax-loader.gif) no-repeat bottom center scroll;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.intro.loading .intro-body {
+  visibility: hidden;
+}
+
+.intro.loaded:after {
   content: '';
   display: block;
   position: absolute;
@@ -222,6 +244,10 @@ a:focus {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+.intro.loaded .intro-body {
+  visibility: visible;;
 }
 
 .intro:before {
