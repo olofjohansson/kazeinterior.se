@@ -91,6 +91,17 @@ ol {
     }
 }
 
+@media(max-width:767px) {
+  .navbar-custom .nav.social {
+    display: none;
+  }
+
+  h1 a {
+    font-size: 30px!important;
+    padding-top: 17px!important;
+  }
+}
+
 a {
     color: #42dca3;
     -webkit-transition: all .2s ease-in-out;
