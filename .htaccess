@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.kazeinterior\.se$
+RewriteRule (.*) http://www.kazeinterior.se/$1 [L,R=301]
